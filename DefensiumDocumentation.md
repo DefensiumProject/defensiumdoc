@@ -1,4 +1,4 @@
-# Variáveis
+# Arquitetura
 
 |Variável|Valor|
 |---|---|
@@ -17,3 +17,10 @@ export DEFENSIUM_DATABASE_PASSWORD=defensium
 
 # Atualizar
 source ~/.bashrc
+
+# Versionamento
+
+|Variáveis do GIT|
+|---|
+|git config --global user.name "Defensium"|
+|git config --global user.email "defensium.project@gmail.com"|
