@@ -47,7 +47,7 @@ Este sistema depende de variáveis de ambiente para acessar recursos como banco 
 
 ## Exportação de Variáveis
 
-As variáveis podem ser adicionadas ao seu `.bashrc` (Linux/macOS) ou `.bash_profile`, conforme o shell usado.
+As variáveis podem ser adicionadas ao seu `.bashrc`.
 
 ### Exemplo de exportação
 
