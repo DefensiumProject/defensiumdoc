@@ -18,6 +18,9 @@ create table if not exists tb_plataforma (
     codigo bigserial not null,
     nome varchar (100) not null,
     ativa boolean not null default true,
+    data_criacao timestamp not null default now(),
+    data_edicao timestamp not null default now(),
+    data_delecao timestamp not null default now(),
     constraint pk_plataforma primary key (codigo),
     constraint un_plataforma_nome unique (nome)
 );
@@ -30,6 +33,9 @@ create table if not exists tb_credencial (
     usuario varchar (60) not null,
     senha varchar (100) not null,
     url varchar (255) null,
+    data_criacao timestamp not null default now(),
+    data_edicao timestamp not null default now(),
+    data_delecao timestamp not null default now(),
     constraint pk_credencial primary key (codigo),
     constraint pk_plataforma foreign key (id_plataforma) references tb_plataforma (codigo),
     constraint un_credencial unique (id_plataforma, descricao)
@@ -60,8 +66,6 @@ insert into tb_credencial (id_plataforma, descricao, usuario, senha, url) values
     (select codigo from tb_plataforma where nome = 'Microsoft'),
     'Conta Microsoft', 'defensium.project@outlook.com.br', 'senha-segura', 'https://outlook.live.com/mail/0/?prompt=select_account'
 );
-
-SELECT * FROM pg_extension WHERE extname = 'pgcrypto';
 
 -- Cartão Bancário
 insert into tb_cartao_bancario (id_plataforma, descricao, numero_cartao, nome_titular, data_validade, cvv) values (
