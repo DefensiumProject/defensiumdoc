@@ -37,6 +37,7 @@ O sistema Defensium tem como principal objetivo gerenciar credenciais pessoais e
 | DEFENSIUM_DATABASE_USERNAME | postgres                             |
 | DEFENSIUM_DATABASE_PASSWORD | defensium                            |
 
+Acesso: https://supabase.com/dashboard/project/jrkgryytjyfadavepemq/database/schemas
 ---
 
 ## Configurações de Ambiente
