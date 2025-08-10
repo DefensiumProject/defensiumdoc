@@ -22,6 +22,7 @@ O sistema Defensium tem como principal objetivo gerenciar credenciais pessoais e
 5. [Versionamento com Git](#versionamento-com-git)
 6. [Referências Futuras](#referências-futuras)
 7. [Modelo de Dados](#modelo)
+8. [Implantação](#implantação)
 
 ---
 
@@ -142,3 +143,18 @@ select * from tb_credencial order by codigo asc;
 
 select * from tb_cartao_bancario order by codigo asc;
 ```
+
+## Implantação
+
+### Configurar ambiente de Homologação no WSL (servidor Priscila), com NGROK para a conta 'defensium.project@gmail.com'
+
+> ngrok.asc \
+  | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
+  && echo "deb https://ngrok-agent.s3.amazonaws.com bookworm main" \
+  | sudo tee /etc/apt/sources.list.d/ngrok.list \
+  && sudo apt update \
+  && sudo apt install ngrok
+
+> ngrok config add-authtoken 317CmR9NGpSYeHA2ZW3FKyNhtAh_3e43mFBYYLCVei82mJEgScurl -sSL https://ngrok-agent.s3.amazonaws.com/
+
+> Disponível em: https://06d7a6165c91.ngrok-free.app
