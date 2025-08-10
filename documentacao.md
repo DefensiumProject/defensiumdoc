@@ -61,6 +61,19 @@ export DEFENSIUM_DATABASE_USERNAME=postgres
 export DEFENSIUM_DATABASE_PASSWORD=defensium
 ```
 
+## Versionamento com Git
+
+#### Colaboradores do Projeto
+
+> git config --global user.name
+> git config --global user.email
+
+> José Quintinno
+> josequintinno@icloud.com
+
+> quintinno.motog@gmail.com
+> @Quintinno88
+
 ## Modelo
 
 #### Funcionalidade de Gerenciamento de Credenciais
