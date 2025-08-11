@@ -45,8 +45,15 @@ Acesso: https://supabase.com/dashboard/project/jrkgryytjyfadavepemq/database/sch
 
 Este sistema depende de variáveis de ambiente para acessar recursos como banco de dados, autenticação, etc.
 
-Passo 1: Remover banner e logs desnecessários
+Passo 1: Remover banner e logs desnecessários (deixar de info e error)
 Passo 2: Exportar dados de acesso ao banco de dados em variáveis de ambiente
+Passo 2: Preparar script de build do ambiente
+
+Subir embiente em segundo plano
+
+> nohup java -jar target/defensium-service.jar > ../defensiumlog/application.log 2>&1 &
+
+> tail -n 500 -f application.log
 
 ---
 
