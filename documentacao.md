@@ -166,6 +166,13 @@ export DEFENSIUM_DATABASE_DATABASE=postgres
 export DEFENSIUM_DATABASE_PORT=5432
 export DEFENSIUM_DATABASE_USERNAME=postgres
 export DEFENSIUM_DATABASE_PASSWORD=postgres
+
+# Ambiente de Produção (https://dashboard.render.com/d/dpg-d2d193buibrs738vrvt0-a)
+export DEFENSIUM_DATABASE_HOST=dpg-d2d193buibrs738vrvt0-a
+export DEFENSIUM_DATABASE_DATABASE=defensium
+export DEFENSIUM_DATABASE_PORT=5432
+export DEFENSIUM_DATABASE_USERNAME=defensium
+export DEFENSIUM_DATABASE_PASSWORD=7qflOJh3YDXGkF3p1XYoud1HptEr2u2N
 ```
 
 ---
@@ -173,6 +180,9 @@ export DEFENSIUM_DATABASE_PASSWORD=postgres
 ##### Configurar PG no servidor TERMUX
 
 ```bash
+
+pkg install termux-api
+termux-wake-lock
 
 pkg update && pkg upgrade -y
 
