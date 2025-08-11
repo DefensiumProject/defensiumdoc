@@ -45,6 +45,9 @@ Acesso: https://supabase.com/dashboard/project/jrkgryytjyfadavepemq/database/sch
 
 Este sistema depende de variáveis de ambiente para acessar recursos como banco de dados, autenticação, etc.
 
+Passo 1: Remover banner e logs desnecessários
+Passo 2: Exportar dados de acesso ao banco de dados em variáveis de ambiente
+
 ---
 
 ## Exportação de Variáveis
@@ -54,11 +57,21 @@ As variáveis podem ser adicionadas ao seu `.bashrc`.
 ### Exemplo de exportação
 
 ```bash
+
+# Ambiente de Desenvolvimento
 export DEFENSIUM_DATABASE_HOST=db.jrkgryytjyfadavepemq.supabase.co
 export DEFENSIUM_DATABASE_DATABASE=postgres
 export DEFENSIUM_DATABASE_PORT=5432
 export DEFENSIUM_DATABASE_USERNAME=postgres
 export DEFENSIUM_DATABASE_PASSWORD=defensium
+
+# Ambiente de Homologação (WSL)
+export DEFENSIUM_DATABASE_HOST=127.0.0.1
+export DEFENSIUM_DATABASE_DATABASE=postgres
+export DEFENSIUM_DATABASE_PORT=5432
+export DEFENSIUM_DATABASE_USERNAME=postgres
+export DEFENSIUM_DATABASE_PASSWORD=postgres
+
 ```
 
 ## Versionamento com Git
