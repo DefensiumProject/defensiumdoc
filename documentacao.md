@@ -168,7 +168,7 @@ export DEFENSIUM_DATABASE_USERNAME=postgres
 export DEFENSIUM_DATABASE_PASSWORD=postgres
 
 # Ambiente de Produção (https://dashboard.render.com/d/dpg-d2d193buibrs738vrvt0-a)
-export DEFENSIUM_DATABASE_HOST=dpg-d2d193buibrs738vrvt0-a
+export DEFENSIUM_DATABASE_HOST=dpg-d2d193buibrs738vrvt0-a.oregon-postgres.render.com
 export DEFENSIUM_DATABASE_DATABASE=defensium
 export DEFENSIUM_DATABASE_PORT=5432
 export DEFENSIUM_DATABASE_USERNAME=defensium
