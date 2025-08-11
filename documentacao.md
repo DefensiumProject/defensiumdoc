@@ -161,6 +161,18 @@ select * from tb_cartao_bancario order by codigo asc;
 
 ### Configurar ambiente de Homologação no WSL (servidor Priscila), com NGROK para a conta 'defensium.project@gmail.com'
 
+#### Versão Java
+
+> java 21.0.6 2025-01-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.6+8-LTS-188)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
+
+> Apache Maven 3.8.7
+Maven home: /usr/share/maven
+Java version: 21.0.6, vendor: Oracle Corporation, runtime: /opt/jdk-21.0.6
+Default locale: pt_BR, platform encoding: UTF-8
+OS name: "linux", version: "6.8.0-71-generic", arch: "amd64", family: "unix"
+
 > ngrok.asc \
   | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
   && echo "deb https://ngrok-agent.s3.amazonaws.com bookworm main" \
