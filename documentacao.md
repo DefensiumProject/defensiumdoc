@@ -232,7 +232,8 @@ ngrok.asc   | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null   && echo "de
 
 ngrok config add-authtoken 317CmR9NGpSYeHA2ZW3FKyNhtAh_3e43mFBYYLCVei82mJEg
 
-ngrok http http://localhost:8080
+ngrok http 3000
+
 ```
 
 **Disponível em:**  
