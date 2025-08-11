@@ -173,6 +173,19 @@ Java version: 21.0.6, vendor: Oracle Corporation, runtime: /opt/jdk-21.0.6
 Default locale: pt_BR, platform encoding: UTF-8
 OS name: "linux", version: "6.8.0-71-generic", arch: "amd64", family: "unix"
 
+##### Instalar Java 21 (.bashrc)
+
+> rm -rf ~/.m2
+
+> sudo apt install openjdk-21-jdk
+
+```sql
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+> javac -version
+
 > ngrok.asc \
   | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
   && echo "deb https://ngrok-agent.s3.amazonaws.com bookworm main" \
