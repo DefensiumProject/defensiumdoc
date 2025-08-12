@@ -275,8 +275,17 @@ ngrok http 3000
 
 sudo apt-add-repository ppa:fish-shell/release-4
 sudo apt update
-sudo apt install fish
+sudo apt install nala -y
+sudo nala install fish -y
 
+- Instalar PostgreSQL
+
+	sudo apt-get update
+    sudo apt-get install postgresql postgresql-contrib -y
+    sudo passwd postgres
+    su postgres
+    psql -c "ALTER USER postgres WITH PASSWORD 'postgres'" -d template1
+    sudo -u postgres psql
 ```
 
 ---
