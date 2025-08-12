@@ -259,6 +259,28 @@ ngrok http 3000
 
 ---
 
+# Servidor Defensium na Oracle Cloud
+
+```bash
+
+- Ao realizar a configuração do Servidor deve-se realizar download das chaves de acesso SSH, a saber ""
+
+- Executar o comando na chave privada
+> chmod 600 ~/.ssh/ssh-key-2025-08-12.key
+
+- Acessar Servidor Remoto na Oracle
+> ssh -i ssh-key-2025-08-12.key ubuntu@140.238.178.253
+
+- Instalar FishShell
+
+sudo apt-add-repository ppa:fish-shell/release-4
+sudo apt update
+sudo apt install fish
+
+```
+
+---
+
 ## Versionamento com Git
 
 **Colaboradores do Projeto:**
