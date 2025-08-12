@@ -153,6 +153,13 @@ As variáveis podem ser adicionadas ao seu `.bashrc`.
 
 **Exemplo de exportação:**
 ```bash
+# Ambiente de Desenvolvimento (TERMUX)
+export DEFENSIUM_DATABASE_HOST=localhost
+export DEFENSIUM_DATABASE_DATABASE=postgres
+export DEFENSIUM_DATABASE_PORT=5432
+export DEFENSIUM_DATABASE_USERNAME=postgres
+export DEFENSIUM_DATABASE_PASSWORD=defensium
+
 # Ambiente de Desenvolvimento
 export DEFENSIUM_DATABASE_HOST=db.jrkgryytjyfadavepemq.supabase.co
 export DEFENSIUM_DATABASE_DATABASE=postgres
