@@ -233,6 +233,11 @@ sudo apt install openjdk-21-jdk
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
+#### Configurar o WSL para acesso na mesma LAN (Rodar comandos como administrador no Windows)
+> hostname -I | Esse comando roda no WSL
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=8080 connectaddress=172.22.200.121
+netsh advfirewall firewall add rule name="WSL 8080" dir=in action=allow protocol=TCP localport=8080
+
 javac -version
 ```
 
