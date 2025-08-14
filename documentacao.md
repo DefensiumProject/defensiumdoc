@@ -238,6 +238,8 @@ export PATH=$JAVA_HOME/bin:$PATH
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=8080 connectaddress=172.22.200.121
 netsh advfirewall firewall add rule name="WSL 8080" dir=in action=allow protocol=TCP localport=8080
 
+-- Acesso disponível nessa LAN: http://192.168.1.4:8080/defensium/credencial
+
 javac -version
 ```
 
