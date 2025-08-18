@@ -168,11 +168,11 @@ export DEFENSIUM_DATABASE_USERNAME=postgres
 export DEFENSIUM_DATABASE_PASSWORD=defensium
 
 # Ambiente de Homologação (WSL)
-export DEFENSIUM_DATABASE_HOST=127.0.0.1
-export DEFENSIUM_DATABASE_DATABASE=postgres
+export DEFENSIUM_DATABASE_HOST=ep-curly-smoke-acg6epkj-pooler.sa-east-1.aws.neon.tech
+export DEFENSIUM_DATABASE_DATABASE=neondb?sslmode=require&channel_binding=require
 export DEFENSIUM_DATABASE_PORT=5432
-export DEFENSIUM_DATABASE_USERNAME=postgres
-export DEFENSIUM_DATABASE_PASSWORD=postgres
+export DEFENSIUM_DATABASE_USERNAME=neondb_owner
+export DEFENSIUM_DATABASE_PASSWORD=npg_EMzf6S5iloHJ
 
 # Ambiente de Produção (https://dashboard.render.com/d/dpg-d2d193buibrs738vrvt0-a)
 export DEFENSIUM_DATABASE_HOST=dpg-d2d193buibrs738vrvt0-a.oregon-postgres.render.com
