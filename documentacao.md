@@ -25,6 +25,51 @@ A plataforma foi projetada para permitir o armazenamento, recuperação e audito
 
 ## Arquitetura
 
+```mermaid
+graph TB
+    subgraph "View"
+        cliente1[WEB]
+        cliente2[APP]
+        cliente3[DKT]
+		cliente4[CLI]
+    end
+    
+    subgraph "API Gateway"
+        gateway1[Portarium Service]
+    end
+    
+    subgraph "Microservices"
+        service1[Defensium Service]
+        service2[Credentium Service]
+    end
+    
+    subgraph "Databases"
+        database1[(PostgreSQL db_defensium_producao)]
+		database2[(PostgreSQL db_credentium_producao)]
+    end
+
+	cliente1 --> gateway1
+	cliente2 --> gateway1
+	cliente3 --> gateway1
+	cliente4 --> gateway1
+
+	gateway1 --> service1
+	service1 --> service2
+
+	service1 --> database1
+	service2 --> database2
+    
+    style cliente1 fill:#e1f5fe
+    style cliente2 fill:#e1f5fe
+    style cliente3 fill:#e1f5fe
+	style cliente4 fill:#e1f5fe
+    style gateway1 fill:#f3e5f5
+    style service1 fill:#e8f5e8
+    style service2 fill:#e8f5e8
+    style database1 fill:#fff555
+    style database2 fill:#fff555
+```
+
 ### Variáveis de Banco de Dados
 
 | Variável | Valor |
